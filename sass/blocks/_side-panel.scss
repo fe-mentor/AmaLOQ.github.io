@@ -1,0 +1,45 @@
+.side-panel {
+	z-index: 3;
+	position: fixed;
+	top: 230px;
+	left: 50px;
+	height: 340px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+		&__link {
+			padding: 10px;
+			&:hover{
+				svg path{
+					transition: all 0.3s;
+					fill: white;
+				}
+			}
+		}
+
+		// .side-panel__devider
+
+		&__devider {
+			width: 2px;
+			height: 70px;
+			background-color: #000;
+		}
+
+		// .side-panel__text
+
+		&__text {
+			height: 150px;
+			width: 25px;
+			font-weight: 700;
+			font-size: 16px;
+			line-height: 24px;
+			span{
+				color: #000;
+				display: block;
+				transform: rotate(-90deg) translate(-42%, -245%);
+				height: 25px;
+				width: 150px;
+			}
+	}
+}

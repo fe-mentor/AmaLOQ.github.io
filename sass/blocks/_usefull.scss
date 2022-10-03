@@ -1,0 +1,140 @@
+.usefull {
+	position: relative;
+	padding-top: 120px;
+	background-color: #fff;
+	z-index: -5;
+	&__subtitle {
+		text-align: center;
+		position: relative;
+		@include before_circle-center;
+	}
+
+	// .usefull__title
+
+	&__title {
+		text-align: center;
+		margin-bottom: 0;
+	}
+
+	// .usefull__divider
+
+	&__divider {
+		margin: 0 auto;
+	}
+
+	// .usefull__grid-container
+
+	&__grid-container {
+		display: grid;
+		padding: 60px 65px 0px 65px;
+		grid-template-columns: repeat(2, 425px);
+		column-gap: 135px;
+		row-gap: 45px;
+	}
+}
+	
+.column-useful {
+
+	// .column-useful__title
+
+	&__title {
+		margin-bottom: 0;
+		position: relative;
+		padding-left: 35px;
+		&:before{
+			content: '';
+			position: absolute;
+			width: 15px;
+			height: 15px;
+			background-color: $main-color;
+			border-radius: 100%;
+			left: -7px;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+	}
+	ul{
+		li{
+			position: relative;
+			&:after{
+				content: '';
+				width: 1px;
+				height: calc(100% + 8px);
+				position: absolute;
+				top: -8px;
+				left: 0;
+				background-color: #000;
+			}
+		}
+	}
+	&__item {
+		position: relative;
+		&:before{
+			content: '';
+			height: 1px;
+			width: 45px;
+			position: absolute;
+			background-color: #000;
+			top: 63px;
+		}
+	}
+
+	// .column-useful__item-head
+
+	&__item-head {
+		padding: 45px 0 0 100px;
+		position: relative;
+	}
+
+	// .column-useful__item-circle
+
+	&__item-circle {
+		top: 45px;
+		left: 45px;
+		position: absolute;
+		@include before_circle;
+		img{
+			position: absolute;
+			top: 15px;
+			left: 14px;
+		}
+	}
+
+	// .column-useful__item-location
+
+	&__item-location {
+		font-size: 12px;
+		line-height: 18px;
+		margin-top: 5px;
+	}
+
+	// .column-useful__text
+
+	&__item-text {
+		padding-left: 43px;
+		margin-top: 12px;
+		font-weight: 500;
+		font-size: 12px;
+		line-height: 18px;
+	}
+}
+// .npt{
+// 	.column-useful{
+// 		&__item-head{
+// 			padding: 10px 0 0 100px;
+// 		}
+// 		&__item-circle{
+// 			top: 10px;
+// 		}
+// 	}
+// }
+// .small-top{
+// 	.column-useful{
+// 		&__item_top28{
+// 			&:before{
+// 				top: 28px;
+// 			}
+// 		}
+// 	}
+// }
+
